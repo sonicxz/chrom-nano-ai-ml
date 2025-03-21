@@ -1,0 +1,90 @@
+/* Dark theme styling */
+.audio-recorder-container {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  /* Buttons */
+  .record-button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #1f1f1f;
+    color: white;
+  }
+  
+  .record-button.start:hover {
+    background-color: #4caf50;
+  }
+  
+  .record-button.stop {
+    background-color: #f44336;
+  }
+  
+  .record-button.start:active {
+    background-color: #45a049;
+  }
+  
+  .record-button.stop:active {
+    background-color: #d32f2f;
+  }
+  
+  /* Animation when recording */
+  .record-button.start {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Save button */
+  .save-button {
+    background-color: #3e3e3e;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #4caf50;
+  }
+  
+  .save-button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+  
+  /* Audio controls */
+  audio {
+    margin-top: 20px;
+  }
+  
